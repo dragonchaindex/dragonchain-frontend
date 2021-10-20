@@ -58,7 +58,7 @@ const Step: React.FC<CountdownProps> = ({ stepText, index, activeStepIndex }) =>
   }
 
   if (isFuture) {
-    return (rm
+    return (
       <FutureWrapper>
         <CircleOutlineIcon />
         <StyledText color="textDisabled">{stepText}</StyledText>
