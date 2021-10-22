@@ -19,6 +19,9 @@ const GlobalStyle = createGlobalStyle`
       max-width: 100%;
     }
   }
+  iframe{
+    display:none !important;
+  }
 `
 
 export default GlobalStyle

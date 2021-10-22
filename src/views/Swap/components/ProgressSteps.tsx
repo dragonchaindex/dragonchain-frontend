@@ -43,7 +43,7 @@ const Connector = styled.div<{ prevConfirmed?: boolean; disabled?: boolean }>`
           : theme.colors.backgroundDisabled}
       80%
   );
-  opacity: 0.6;
+  opacity: 0.9;
 `
 
 interface ProgressCirclesProps {

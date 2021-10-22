@@ -46,7 +46,7 @@ const TokenButton = styled(Flex)`
   margin-right: 16px;
   :hover {
     cursor: pointer;
-    opacity: 0.6;
+    opacity: 0.9;
   }
 `
 
@@ -57,7 +57,7 @@ const LockedTokensContainer = styled(Flex)`
   flex-direction: column;
   gap: 8px;
   margin-top: 8px;
-  border-radius: 16px;
+  border-radius: 2px;
   max-width: 280px;
 `
 

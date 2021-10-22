@@ -15,7 +15,7 @@ const CardWrapper = styled(Link)`
   margin-left: 16px;
   :hover {
     cursor: pointer;
-    opacity: 0.6;
+    opacity: 0.9;
   }
 `
 

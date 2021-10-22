@@ -50,19 +50,19 @@ const DetailsView: React.FC<DetailsViewProps> = ({
       </Flex>
       <Flex alignItems="center" justifyContent="space-between" mb="4px">
         <Text color="textSubtle" fontSize="16px">
-          {t('Manual CAKE Pool')}
+          {t('Manual Pool')}
         </Text>
         <Text textAlign="right">{formatNumber(cakePoolBalance, 0, 3)}</Text>
       </Flex>
       <Flex alignItems="center" justifyContent="space-between" mb="4px">
         <Text color="textSubtle" fontSize="16px">
-          {t('Auto CAKE Pool')}
+          {t('Auto Pool')}
         </Text>
         <Text textAlign="right">{formatNumber(cakeVaultBalance, 0, 3)}</Text>
       </Flex>
       <Flex alignItems="center" justifyContent="space-between" mb="4px">
         <Text color="textSubtle" fontSize="16px">
-          {t('Other Syrup Pools')}
+          {t('Other Pools')}
         </Text>
         <Text textAlign="right">{formatNumber(poolsBalance, 0, 3)}</Text>
       </Flex>
