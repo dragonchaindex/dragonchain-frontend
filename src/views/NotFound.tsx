@@ -1,7 +1,7 @@
 import React from 'react'
 import useTheme from 'hooks/useTheme'
 import styled from 'styled-components'
-import { Button, Heading, Text, LogoIcon } from '@pancakeswap/uikit'
+import { Button, Heading, Text, LogoIcon } from '@dragonchaindex/toolkit'
 import { Link } from 'react-router-dom'
 import Page from 'components/Layout/Page'
 import { useTranslation } from 'contexts/Localization'

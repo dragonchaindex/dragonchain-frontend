@@ -1,6 +1,6 @@
 import React from 'react'
-import { Price } from '@pancakeswap/sdk'
-import { Text, AutoRenewIcon } from '@pancakeswap/uikit'
+import { Price } from '@dragonchaindex/sdk'
+import { Text, AutoRenewIcon } from '@dragonchaindex/toolkit'
 import { StyledBalanceMaxMini } from './styleds'
 
 interface TradePriceProps {

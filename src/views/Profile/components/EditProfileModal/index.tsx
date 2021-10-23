@@ -1,5 +1,5 @@
 import React from 'react'
-import { InjectedModalProps, Modal } from '@pancakeswap/uikit'
+import { InjectedModalProps, Modal } from '@dragonchaindex/toolkit'
 import { useTranslation } from 'contexts/Localization'
 import useEditProfile, { Views } from './reducer'
 import StartView from './StartView'
