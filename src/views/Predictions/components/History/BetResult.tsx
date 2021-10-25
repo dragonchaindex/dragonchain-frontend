@@ -25,7 +25,7 @@ interface BetResultProps {
 
 const StyledBetResult = styled(Box)`
   border: 2px solid ${({ theme }) => theme.colors.textDisabled};
-  border-radius: 2px;
+  border-radius: 10px;
   margin-bottom: 24px;
   padding: 16px;
 `

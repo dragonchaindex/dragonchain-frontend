@@ -1,8 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
 // eslint-disable-next-line import/no-unresolved
-import { PancakeTheme } from '@pancakeswap/uikit/dist/theme'
+import { PancakeTheme } from '@dragonchaindex/toolkit/dist/theme'
 
-declare module 'styled-components' {
+declare module '' {
   /* eslint-disable @typescript-eslint/no-empty-interface */
   export interface DefaultTheme extends PancakeTheme {}
 }
@@ -13,6 +13,9 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     background-color: ${({ theme }) => theme.colors.background};
+    background-image: url('images/bg-home.png');
+    background-attachment: fixed;
+    background-size: cover;
 
     img {
       height: auto;
@@ -21,6 +24,11 @@ const GlobalStyle = createGlobalStyle`
   }
   iframe{
     display:none !important;
+  }
+  @keyframes flame{
+    0% {height:150px; width:150px;}
+    50% {height:140px; width:140px;}
+    100% {height:150px; width:150px;}
   }
 `
 

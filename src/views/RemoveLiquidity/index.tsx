@@ -40,7 +40,7 @@ import Page from '../Page'
 
 const BorderCard = styled.div`
   border: solid 1px ${({ theme }) => theme.colors.cardBorder};
-  border-radius: 2px;
+  border-radius: 10px;
   padding: 16px;
 `
 

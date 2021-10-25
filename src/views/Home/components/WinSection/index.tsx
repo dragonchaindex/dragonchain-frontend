@@ -104,7 +104,7 @@ const WinSection = () => {
           <CompositeImage {...topRightImage} />
         </TopRightImgWrapper>
       </BgWrapper>
-      <TransparentFrame isDark={theme.isDark}>
+      <TransparentFrame isDark="true">
         <Flex flexDirection="column" alignItems="center" justifyContent="center">
           <PurpleWordHeading textAlign="center" text={t('Win millions in prizes')} />
           <Text color="textSubtle">{t('Provably fair, on-chain games.')}</Text>

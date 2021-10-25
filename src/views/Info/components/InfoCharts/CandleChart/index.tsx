@@ -43,7 +43,7 @@ const CandleChart = ({ data, setValue, setLabel, ...rest }: LineChartProps) => {
         width: chartRef.current.parentElement.clientWidth - 32,
         layout: {
           backgroundColor: 'transparent',
-          textColor: theme.colors.textSubtle,
+          textColor: '#7A6EAA',
           fontFamily: 'Kanit, sans-serif',
           fontSize: 12,
         },

@@ -73,52 +73,67 @@ const App: React.FC = () => {
         <SuspenseWithChunkError fallback={<PageLoader />}>
           <Switch>
             <Route path="/" exact>
-              <Pools />
+              <Redirect to="/swap" />
             </Route>
             <Route exact path="/farms/auction">
-              <FarmAuction />
+              {/* <FarmAuction /> */}
+              <Redirect to="/swap" />
             </Route>
             <Route path="/farms">
-              <Farms />
+              {/* <Farms /> */}
+              <Redirect to="/swap" />
             </Route>
             <Route path="/pools">
-              <Pools />
+              {/* <Pools /> */}
+              <Redirect to="/swap" />
             </Route>
             <Route path="/lottery">
-              <Lottery />
+              {/* <Lottery /> */}
+              <Redirect to="/swap" />
             </Route>
             <Route path="/ifo">
-              <Ifos />
+              {/* <Ifos /> */}
+              <Redirect to="/swap" />
             </Route>
             <Route path="/collectibles">
-              <Collectibles />
+              {/* <Collectibles /> */}
+              <Redirect to="/swap" />
             </Route>
             <Route exact path="/teams">
-              <Teams />
+              {/* <Teams /> */}
+              <Redirect to="/swap" />
             </Route>
             <Route path="/teams/:id">
-              <Team />
+              {/* <Team /> */}
+              <Redirect to="/swap" />
             </Route>
             <Route path="/profile">
-              <Profile />
+              {/* <Profile /> */}
+              <Redirect to="/swap" />
             </Route>
             <Route path="/competition">
-              <TradingCompetition />
+              {/* <TradingCompetition /> */}
+              <Redirect to="/swap" />
             </Route>
             <Route exact path="/prediction">
-              <Predictions />
+              <Redirect to="/swap" />
+              {/* <Predictions /> */}
             </Route>
             <Route path="/prediction/leaderboard">
-              <PredictionsLeaderboard />
+              {/* <PredictionsLeaderboard /> */}
+              <Redirect to="/swap" />
             </Route>
             <Route exact path="/voting">
-              <Voting />
+              <Redirect to="/swap" /> 
+              {/* <Voting /> */}
             </Route>
             <Route exact path="/voting/proposal/create">
-              <CreateProposal />
+              {/* <CreateProposal /> */}
+              <Redirect to="/swap" />
             </Route>
             <Route path="/voting/proposal/:id">
-              <Proposal />
+              {/* <Proposal /> */}
+              <Redirect to="/swap" />
             </Route>
             {/* Info pages */}
             <Route path="/info">
@@ -142,7 +157,7 @@ const App: React.FC = () => {
             <Route exact strict path="/remove/:currencyIdA/:currencyIdB" component={RemoveLiquidity} />
 
             {/* Redirect */}
-            <Route path="/pool">
+            {/* <Route path="/pool">
               <Redirect to="/liquidity" />
             </Route>
             <Route path="/staking">
@@ -153,7 +168,7 @@ const App: React.FC = () => {
             </Route>
             <Route path="/nft">
               <Redirect to="/collectibles" />
-            </Route>
+            </Route> */}
 
             {/* 404 */}
             <Route component={NotFound} />

@@ -77,14 +77,14 @@ const Chart = ({ data, setHoverValue, setHoverDate }: LineChartProps) => {
           scale="linear"
           axisLine={false}
           tickLine={false}
-          color={theme.colors.textSubtle}
+          color="#7A6EAA"
           fontSize="12px"
           tickFormatter={(val) => `$${formatAmount(val)}`}
           orientation="right"
-          tick={{ dx: 10, fill: theme.colors.textSubtle }}
+          tick={{ dx: 10, fill: '#7A6EAA' }}
         />
         <Tooltip
-          cursor={{ fill: theme.colors.backgroundDisabled }}
+          cursor={{ fill: '#3c3742' }}
           contentStyle={{ display: 'none' }}
           formatter={(tooltipValue, name, props) => (
             <HoverUpdater payload={props.payload} setHoverValue={setHoverValue} setHoverDate={setHoverDate} />
@@ -92,9 +92,9 @@ const Chart = ({ data, setHoverValue, setHoverDate }: LineChartProps) => {
         />
         <Bar
           dataKey="value"
-          fill={theme.colors.primary}
+          fill="#ff9400"
           shape={(props) => (
-            <CustomBar height={props.height} width={props.width} x={props.x} y={props.y} fill={theme.colors.primary} />
+            <CustomBar height={props.height} width={props.width} x={props.x} y={props.y} fill="#ff9400" />
           )}
         />
       </BarChart>

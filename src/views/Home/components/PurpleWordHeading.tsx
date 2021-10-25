@@ -13,7 +13,7 @@ const PurpleWordHeading: React.FC<HeadingProps> = ({ text, ...props }) => {
   const remainingWords = split.slice(1).join(' ')
   return (
     <Heading scale="xl" mb="24px" {...props}>
-      <span style={{ color: theme.colors.secondary }}>{firstWord} </span>
+      <span style={{ color: "black" }}>{firstWord} </span>
       {remainingWords}
     </Heading>
   )

@@ -116,7 +116,7 @@ const FarmAuction = () => {
       <>
         <PageSection
           innerProps={{ style: { margin: '0', width: '100%' } }}
-          background={theme.colors.background}
+          background="black"
           p="24px 0"
           index={2}
           concaveDivider
@@ -140,7 +140,7 @@ const FarmAuction = () => {
           </AuctionContainer>
         </PageSection>
         <PageSection
-          background={theme.isDark ? CAKE_BURN_BG_DARK : CAKE_BURN_BG_LIGHT}
+          background={true ? CAKE_BURN_BG_DARK : CAKE_BURN_BG_LIGHT}
           index={2}
           innerProps={{ style: { width: '100%' } }}
           dividerPosition="top"
@@ -149,7 +149,7 @@ const FarmAuction = () => {
           <AuctionCakeBurn />
         </PageSection>
         <PageSection
-          background={theme.isDark ? FAQ_BG_DARK : FAQS_BG_LIGHT}
+          background={true ? FAQ_BG_DARK : FAQS_BG_LIGHT}
           clipFill={{ light: '#CBD7EF', dark: '#434575' }}
           dividerFill={{ light: CAKE_BURN_BG_LIGHT, dark: CAKE_BURN_BG_DARK }}
           concaveDivider

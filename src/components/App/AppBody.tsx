@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Card } from '@dragonchaindex/toolkit'
 
 export const BodyWrapper = styled(Card)`
-  border-radius: 2px;
+  border-radius: 10px;
   max-width: 436px;
   width: 100%;
   z-index: 1;

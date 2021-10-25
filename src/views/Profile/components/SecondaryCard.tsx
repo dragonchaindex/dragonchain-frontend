@@ -3,7 +3,7 @@ import { Text } from '@dragonchaindex/toolkit'
 
 const SecondaryCard = styled(Text)`
   border: 2px solid ${({ theme }) => theme.colors.tertiary};
-  border-radius: 2px;
+  border-radius: 10px;
 `
 
 SecondaryCard.defaultProps = {

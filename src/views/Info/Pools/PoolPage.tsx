@@ -57,7 +57,7 @@ const LockedTokensContainer = styled(Flex)`
   flex-direction: column;
   gap: 8px;
   margin-top: 8px;
-  border-radius: 2px;
+  border-radius: 10px;
   max-width: 280px;
 `
 

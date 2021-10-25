@@ -32,7 +32,7 @@ export const TabToggle = styled.button<TabProps>`
   outline: 0;
   padding: 16px;
   margin: 0;
-  border-radius: 2px 2px 0 0;
+  border-radius: 10px 2px 0 0;
   font-size: 16px;
   font-weight: 600;
   color: ${({ theme, isActive }) => (isActive ? theme.colors.text : theme.colors.textSubtle)};

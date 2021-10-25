@@ -65,22 +65,21 @@ const Stats = () => {
           <StatCardContent
             headingText={t('%users% users', { users })}
             bodyText={t('in the last 30 days')}
-            highlightColor={theme.colors.secondary}
+            highlightColor="#81501d"
           />
         </IconCard>
         <IconCard {...TradesCardData} mr={[null, null, null, '16px']} mb={['16px', null, null, '0']}>
           <StatCardContent
             headingText={t('%trades% trades', { trades })}
             bodyText={t('made in the last 30 days')}
-            highlightColor={theme.colors.primary}
+            highlightColor="#ff9400"
           />
         </IconCard>
         <IconCard {...StakedCardData}>
           <StatCardContent
             headingText={t('$%tvl% staked', { tvl: tvlString })}
             bodyText={t('Total Value Locked')}
-            highlightColor={theme.colors.failure}
-          />
+            highlightColor="#ED4B9E"          />
         </IconCard>
       </Flex>
     </Flex>

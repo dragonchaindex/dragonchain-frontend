@@ -51,6 +51,7 @@ const ToggleWrapper = styled.div`
   display: flex;
   align-items: center;
   margin-left: 10px;
+  border-radius: 10px;
 
   ${Text} {
     margin-left: 8px;

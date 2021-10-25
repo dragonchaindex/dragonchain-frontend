@@ -15,7 +15,7 @@ const RowHeading: React.FC<HeadingProps> = ({ text, ...props }) => {
   return (
     <Heading {...props}>
       {firstWord}
-      <span style={{ color: theme.colors.secondary }}> {remainingWords}</span>
+      <span style={{color: "black"}}> {remainingWords}</span>
     </Heading>
   )
 }
