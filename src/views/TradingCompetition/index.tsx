@@ -261,7 +261,7 @@ const TradingCompetition = () => {
         containerProps={{ style: { marginTop: '-30px' } }}
         index={3}
         concaveDivider
-        clipFill={{ light: theme.colors.background }}
+        clipFill={{ light: "red" }}
         dividerPosition="top"
         dividerComponent={
           <RibbonWithImage imageComponent={<RanksIcon width="175px" />} ribbonDirection="up">
@@ -320,7 +320,7 @@ const TradingCompetition = () => {
         index={6}
         dividerPosition="top"
         dividerFill={{ light: '#191326' }}
-        clipFill={{ light: theme.colors.background }}
+        clipFill={{ light: "red" }}
         background={DARKBG}
       >
         <Flex alignItems="center">

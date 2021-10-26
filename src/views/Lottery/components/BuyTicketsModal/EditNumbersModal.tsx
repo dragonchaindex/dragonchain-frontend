@@ -39,7 +39,7 @@ const EditNumbersModal: React.FC<{
     <StyledModal
       title={t('Edit numbers')}
       onDismiss={onDismiss}
-      headerBackground={theme.colors.gradients.cardHeader}
+      headerBackground="red"
       onBack={onDismiss}
     >
       <ScrollableContainer>

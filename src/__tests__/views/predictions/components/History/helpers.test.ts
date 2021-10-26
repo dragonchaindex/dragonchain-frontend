@@ -191,7 +191,7 @@ describe('getPayout', () => {
     [bet2Bull, 1238.4],
     [bet2Bear, 1548],
   ])('correctly calculates payout', (value, expected) => {
-    expect(getPayout(value)).toEqual(expected)
+    return expect(getPayout(value)).toEqual(expected)
   })
 
   it.each([
@@ -200,6 +200,6 @@ describe('getPayout', () => {
     [bet2Bull, 0.97, 1201.248],
     [bet2Bear, 0.97, 1501.56],
   ])('correctly calculates payout including reward rate', (value, rewardRate, expected) => {
-    expect(getPayout(value, rewardRate)).toEqual(expected)
+    return expect(getPayout(value, rewardRate)).toEqual(expected)
   })
 })

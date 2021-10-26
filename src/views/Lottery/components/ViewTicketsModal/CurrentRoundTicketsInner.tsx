@@ -46,7 +46,7 @@ const CurrentRoundTicketsInner = () => {
           })}
         </ScrollBox>
       </Flex>
-      <Flex borderTop={`1px solid ${theme.colors.cardBorder}`} alignItems="center" justifyContent="center">
+      <Flex borderTop={`1px solid "red"`} alignItems="center" justifyContent="center">
         <BuyTicketsButton disabled={ticketBuyIsDisabled} mt="24px" width="100%" />
       </Flex>
     </>

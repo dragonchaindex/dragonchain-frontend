@@ -38,6 +38,7 @@ const CandleChart = ({ data, setValue, setLabel, ...rest }: LineChartProps) => {
   // if chart not instantiated in canvas, create it
   useEffect(() => {
     if (!chartCreated && data && !!chartRef?.current?.parentElement) {
+      // @ts-ignore
       const chart = createChart(chartRef.current, {
         height: CANDLE_CHART_HEIGHT,
         width: chartRef.current.parentElement.clientWidth - 32,
@@ -83,7 +84,10 @@ const CandleChart = ({ data, setValue, setLabel, ...rest }: LineChartProps) => {
             labelVisible: false,
             style: 3,
             width: 1,
+                  // @ts-ignore
             color: theme.colors.textSubtle,
+
+                  // @ts-ignore
             labelBackgroundColor: theme.colors.primary,
           },
         },
@@ -97,12 +101,20 @@ const CandleChart = ({ data, setValue, setLabel, ...rest }: LineChartProps) => {
   useEffect(() => {
     if (chartCreated && data) {
       const series = chartCreated.addCandlestickSeries({
-        upColor: theme.colors.success,
-        downColor: theme.colors.failure,
-        borderDownColor: theme.colors.failure,
-        borderUpColor: theme.colors.success,
-        wickDownColor: theme.colors.failure,
-        wickUpColor: theme.colors.success,
+                          // @ts-ignore
+
+        upColor: theme.colors.success,                  // @ts-ignore
+
+        downColor: theme.colors.failure,                  // @ts-ignore
+
+        borderDownColor: theme.colors.failure,                  // @ts-ignore
+
+        borderUpColor: theme.colors.success,                  // @ts-ignore
+
+        wickDownColor: theme.colors.failure,                  // @ts-ignore
+
+        wickUpColor: theme.colors.success,                  // @ts-ignore
+
       })
 
       series.setData(data)

@@ -227,7 +227,7 @@ const PreviousRoundTicketsInner: React.FC<{ roundId: string }> = ({ roundId }) =
           </>
         )}
       </ScrollBox>
-      <Flex borderTop={`1px solid ${theme.colors.cardBorder}`} alignItems="center" justifyContent="center">
+      <Flex borderTop={`1px solid "red"}`} alignItems="center" justifyContent="center">
         {userWinningTickets.isFetched && getFooter()}
       </Flex>
     </>

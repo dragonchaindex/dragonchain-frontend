@@ -308,7 +308,7 @@ const BuyTicketsModal: React.FC<BuyTicketsModalProps> = ({ onDismiss }) => {
   }
 
   return (
-    <StyledModal title={t('Buy Tickets')} onDismiss={onDismiss} headerBackground={theme.colors.gradients.cardHeader}>
+    <StyledModal title={t('Buy Tickets')} onDismiss={onDismiss} headerBackground="red">
       {tooltipVisible && tooltip}
       <Flex alignItems="center" justifyContent="space-between" mb="8px">
         <Text color="textSubtle">{t('Buy')}:</Text>
@@ -404,7 +404,7 @@ const BuyTicketsModal: React.FC<BuyTicketsModalProps> = ({ onDismiss }) => {
             ~{discountValue} CAKE
           </Text>
         </Flex>
-        <Flex borderTop={`1px solid ${theme.colors.cardBorder}`} pt="8px" mb="24px" justifyContent="space-between">
+        <Flex borderTop={`1px solid "red"`} pt="8px" mb="24px" justifyContent="space-between">
           <Text color="textSubtle" fontSize="16px">
             {t('You pay')}
           </Text>

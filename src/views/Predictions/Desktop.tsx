@@ -26,7 +26,7 @@ const ExpandChartButton = styled(Button)`
   display: none;
   left: 32px;
   position: absolute;
-  z-index: 50;
+  z-index: 50;    
 
   &:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {
     background-color: ${({ theme }) => theme.card.background};
