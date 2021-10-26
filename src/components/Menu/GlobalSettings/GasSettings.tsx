@@ -11,7 +11,7 @@ const GasSettings = () => {
 
   return (
     <Flex flexDirection="column">
-      <Flex mb="12px" alignItems="center">
+      {/* <Flex mb="12px" alignItems="center">
         <Text>{t('Default Transaction Speed (GWEI)')}</Text>
         <QuestionHelper
           text={t(
@@ -20,7 +20,7 @@ const GasSettings = () => {
           placement="top-start"
           ml="4px"
         />
-      </Flex>
+      </Flex> */}
       <Flex flexWrap="wrap">
         <Button
           mt="4px"
