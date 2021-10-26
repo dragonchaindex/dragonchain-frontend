@@ -36,14 +36,14 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
   //   hideSubNav: true,
   //   items: [],
   // },
-  {
-    label: 'Info',
-    href: '/info',
-    icon: 'Info',
-    showItemsOnMobile: false,
-    hideSubNav: true,
-    items: [],
-  },
+  // {
+  //   label: 'Info',
+  //   href: '/info',
+  //   icon: 'Info',
+  //   showItemsOnMobile: false,
+  //   hideSubNav: true,
+  //   items: [],
+  // },
 ]
 
 export default config
