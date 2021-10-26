@@ -9,6 +9,7 @@ import TokenTable from 'views/Info/components/InfoTables/TokensTable'
 import PoolTable from 'views/Info/components/InfoTables/PoolsTable'
 import { formatAmount } from 'views/Info/utils/formatInfoNumbers'
 import BarChart from 'views/Info/components/InfoCharts/BarChart'
+
 import {
   useAllPoolData,
   useAllTokenData,
@@ -32,6 +33,9 @@ export const ChartCardsContainer = styled(Flex)`
   ${({ theme }) => theme.mediaQueries.md} {
     flex-direction: row;
   } ;
+`
+const StyledCard = styled(Card)`
+  background: ${({ theme }) => theme.colors.backgroundAlt};
 `
 
 const Overview: React.FC = () => {
@@ -108,7 +112,7 @@ const Overview: React.FC = () => {
         {t('PancakeSwap Info & Analytics')}
       </Heading>
       <ChartCardsContainer>
-        <Card>
+        <StyledCard>
           <Box p={['16px', '16px', '24px']}>
             <Text bold color="secondary">
               {t('Liquidity')}
@@ -129,8 +133,8 @@ const Overview: React.FC = () => {
               />
             </Box>
           </Box>
-        </Card>
-        <Card>
+        </StyledCard>
+        <StyledCard>
           <Box p={['16px', '16px', '24px']}>
             <Text bold color="secondary">
               {t('Volume 24H')}
@@ -147,7 +151,7 @@ const Overview: React.FC = () => {
               <BarChart data={formattedVolumeData} setHoverValue={setVolumeHover} setHoverDate={setVolumeDateHover} />
             </Box>
           </Box>
-        </Card>
+        </StyledCard>
       </ChartCardsContainer>
       <Heading scale="lg" mt="40px" mb="16px">
         {t('Top Tokens')}
