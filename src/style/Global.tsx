@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     background-color: ${({ theme }) => theme.colors.background};
-    background-image: url('images/bg-home.png');
+    background-image: url('images/bg-home.webp');
     background-attachment: fixed;
     background-size: cover;
 

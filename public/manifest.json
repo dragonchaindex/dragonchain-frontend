@@ -1,8 +1,8 @@
 {
-  "short_name": "PancakeSwap",
-  "name": "PancakeSwap",
-  "description": "Farm CAKE with Pancake LP Tokens",
-  "homepage_url": "https://pancakeswap.finance",
+  "short_name": "Dragon Chain",
+  "name": "Dragon Chain",
+  "description": "Farm DRAC with LP Tokens",
+  "homepage_url": "https://dragonchaindex.finance",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#1FC7D4",
