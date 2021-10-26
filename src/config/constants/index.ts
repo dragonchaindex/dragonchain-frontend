@@ -1,7 +1,7 @@
 import { ChainId, JSBI, Percent, Token } from '@dragonchaindex/sdk'
 import { mainnetTokens, testnetTokens } from './tokens'
 
-export const ROUTER_ADDRESS = '0xf2D2A5B03E979E34360f2926674Ae0CD099a3F6d'
+export const ROUTER_ADDRESS = '0xf61AD3C4743Af43909c6d7415AaF316F484Db344'
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -12,10 +12,10 @@ type ChainTokenList = {
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   [ChainId.MAINNET]: [
     mainnetTokens.wbnb,
-    mainnetTokens.usdt,
+    mainnetTokens.cake,
     mainnetTokens.busd
   ],
-  [ChainId.TESTNET]: [testnetTokens.wbnb, testnetTokens.usdt, testnetTokens.busd],
+  [ChainId.TESTNET]: [testnetTokens.wbnb, testnetTokens.cake, testnetTokens.busd],
 }
 
 /**
@@ -37,19 +37,21 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
-  [ChainId.MAINNET]: [mainnetTokens.busd, mainnetTokens.usdt, mainnetTokens.wbnb],
-  [ChainId.TESTNET]: [testnetTokens.wbnb, testnetTokens.usdt, testnetTokens.busd],
+  [ChainId.MAINNET]: [mainnetTokens.busd, mainnetTokens.cake, mainnetTokens.btcb],
+  [ChainId.TESTNET]: [testnetTokens.wbnb, testnetTokens.cake, testnetTokens.busd],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
-  [ChainId.MAINNET]: [mainnetTokens.wbnb, mainnetTokens.busd, mainnetTokens.usdt],
-  [ChainId.TESTNET]: [testnetTokens.wbnb, testnetTokens.busd],
+  [ChainId.MAINNET]: [mainnetTokens.wbnb, mainnetTokens.dai, mainnetTokens.busd, mainnetTokens.usdt],
+  [ChainId.TESTNET]: [testnetTokens.wbnb, testnetTokens.cake, testnetTokens.busd],
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.MAINNET]: [
+    [mainnetTokens.cake, mainnetTokens.wbnb],
     [mainnetTokens.busd, mainnetTokens.usdt],
+    [mainnetTokens.dai, mainnetTokens.usdt],
   ],
 }
 

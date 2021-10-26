@@ -94,7 +94,7 @@ export function useSwapCallback(
   recipientAddressOrName: string | null, // the ENS name or address of the recipient of the trade, or null if swap should be returned to sender
 ): { state: SwapCallbackState; callback: null | (() => Promise<string>); error: string | null } {
   const { account, chainId, library } = useActiveWeb3React()
-  const gasPrice = useGasPrice()
+    const gasPrice = useGasPrice()
 
   const swapCalls = useSwapCallArguments(trade, allowedSlippage, recipientAddressOrName)
 
@@ -133,6 +133,7 @@ export function useSwapCallback(
                 }
               })
               .catch((gasError) => {
+                  console.log(gasError)
                 console.error('Gas estimate failed, trying eth_call to extract error', call)
 
                 return contract.callStatic[methodName](...args, options)
@@ -146,6 +147,10 @@ export function useSwapCallback(
                     const errorMessage = `The transaction cannot succeed due to error: ${
                       reason ?? 'Unknown error, check the logs'
                     }.`
+
+                      console.log(errorMessage)
+                      console.log(callError.data?.message)
+                      console.log(callError.message)
 
                     return { call, error: new Error(errorMessage) }
                   })

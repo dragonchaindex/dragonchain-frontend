@@ -45,7 +45,7 @@
     {
       "name": "BUSD Token",
       "symbol": "BUSD",
-      "address": "0x64E7aB80578abAdc38FDAD0890Bca1AD711341f9",
+      "address": "0x9C54B6981AE52F5E286d7b6CC4318e492b2Bd576",
       "chainId": 97,
       "decimals": 18,
       "logoURI": "https://pancakeswap.finance/images/tokens/0xe9e7cea3dedca5984780bafc599bd69add087d56.png"
@@ -53,7 +53,7 @@
     {
       "name": "USDT Token",
       "symbol": "USDT",
-      "address": "0x9940E0369252D9D67B8CB4F314356E7A57A680B1",
+      "address": "0x1AB2cC28990B7b4603759A06ECf983ED50469867",
       "chainId": 97,
       "decimals": 18,
       "logoURI": "https://pancakeswap.finance/images/tokens/0x2170ed0880ac9a755fd29b2688956bd959f933f8.png"

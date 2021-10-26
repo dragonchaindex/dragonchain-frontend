@@ -38,6 +38,7 @@ export default function ManageTokens({
   setImportToken: (token: Token) => void
 }) {
   const { chainId } = useActiveWeb3React()
+  console.log(chainId)
 
   const { t } = useTranslation()
 
