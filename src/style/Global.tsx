@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${({ theme }) => theme.colors.background};
     background-image: url(images/bg-home.webp);
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;

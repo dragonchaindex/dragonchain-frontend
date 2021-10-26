@@ -79,7 +79,7 @@ const Stats = () => {
           <StatCardContent
             headingText={t('$%tvl% staked', { tvl: tvlString })}
             bodyText={t('Total Value Locked')}
-            highlightColor="#ED4B9E"          />
+            highlightColor="#ed2828"          />
         </IconCard>
       </Flex>
     </Flex>

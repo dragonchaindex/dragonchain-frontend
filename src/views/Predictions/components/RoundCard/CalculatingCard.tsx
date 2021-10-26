@@ -34,7 +34,7 @@ const CalculatingCard: React.FC<CalculatingCardProps> = ({ round, hasEnteredUp, 
           <MultiplierArrow isDisabled hasEntered={hasEnteredUp} />
           <RoundResultBox>
             <Flex alignItems="center" justifyContent="center" flexDirection="column">
-              <Spinner size={96} />
+              <Spinner />
               <Flex mt="8px" ref={targetRef}>
                 <TooltipText>{t('Calculating')}</TooltipText>
                 <InfoIcon ml="4px" />

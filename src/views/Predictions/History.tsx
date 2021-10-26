@@ -93,7 +93,7 @@ const History = () => {
       <BetWrapper>
         {isFetchingHistory && currentHistoryPage === 1 ? (
           <SpinnerWrapper>
-            <Spinner size={72} />
+            <Spinner />
           </SpinnerWrapper>
         ) : (
           activeTabComponent

@@ -79,12 +79,12 @@ const App: React.FC = () => {
               <Redirect to="/liquidity" />
             </Route>
             <Route path="/farms">
-              {/* <Farms /> */}
-              <Redirect to="/swap" />
+              <Farms />
+              {/* <Redirect to="/swap" /> */}
             </Route>
             <Route path="/pools">
-              {/* <Pools /> */}
-              <Redirect to="/swap" />
+              <Pools />
+              {/* <Redirect to="/swap" /> */}
             </Route>
             <Route path="/lottery">
               {/* <Lottery /> */}
@@ -136,7 +136,7 @@ const App: React.FC = () => {
             </Route>
             {/* Info pages */}
             <Route path="/info">
-              {/* <Info /> */}
+              <Info />
               <Redirect to="/swap" />
             </Route>
 
