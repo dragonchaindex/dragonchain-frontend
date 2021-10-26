@@ -27,11 +27,24 @@ const GlobalStyle = createGlobalStyle`
   iframe{
     display:none !important;
   }
-  @keyframes flame{
-    0% {height:150px; width:150px;}
-    50% {height:140px; width:140px;}
-    100% {height:150px; width:150px;}
+
+  .shadow-flame{
+    -webkit-animation: shadowflame 2s ease-in-out infinite !important;
+    animation: shadowflame 2s ease-in-out infinite !important;
   }
+
+  @keyframes shadowflame{
+    0% {
+      box-shadow: 0 0 5px #D20726;
+    }
+    50% {
+        box-shadow: 0 0 15px #D20726;
+    }
+    100% {
+        box-shadow: 0 0 5px #D20726;
+    }
+  }
+  
 `
 
 export default GlobalStyle
