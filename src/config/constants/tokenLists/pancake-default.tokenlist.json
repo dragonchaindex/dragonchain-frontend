@@ -85,7 +85,7 @@
     {
       "name": "Wyvern Token",
       "symbol": "WYVERN",
-      "address": "",
+      "address": "0x3833B175Af1900b457cf83B839727AF6C9cF0bEe",
       "chainId": 97,
       "decimals": 9,
       "logoURI": "https://i.imgur.com/tr2L2s5.png"
