@@ -158,10 +158,11 @@ const App: React.FC = () => {
 
             {/* Redirect */}
             <>
-            <Route path="/swap">
-              <Redirect to="/swap"/>
+
+            <Route path="/swap" exact>
+              <Redirect to="/swap" />
             </Route>
-            <Route path="/liquidity">
+            <Route path="/liquidity" exact>
               <Redirect to="/liquidity"/>
             </Route>
             </>
