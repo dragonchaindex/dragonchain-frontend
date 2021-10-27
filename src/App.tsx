@@ -162,7 +162,7 @@ const App: React.FC = () => {
             <Route path="/swap" exact>
               <Redirect to="/swap" />
             </Route>
-            <Route path="/liquidity" exact>
+            <Route path="/pool" exact>
               <Redirect to="/liquidity"/>
             </Route>
             </>
