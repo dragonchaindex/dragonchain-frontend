@@ -157,18 +157,14 @@ const App: React.FC = () => {
             <Route exact strict path="/remove/:currencyIdA/:currencyIdB" component={RemoveLiquidity} />
 
             {/* Redirect */}
-            {/* <Route path="/pool">
-              <Redirect to="/liquidity" />
+            <>
+            <Route path="/swap">
+              <Redirect to="/swap"/>
             </Route>
-            <Route path="/staking">
-              <Redirect to="/pools" />
+            <Route path="/liquidity">
+              <Redirect to="/liquidity"/>
             </Route>
-            <Route path="/syrup">
-              <Redirect to="/pools" />
-            </Route>
-            <Route path="/nft">
-              <Redirect to="/collectibles" />
-            </Route> */}
+            </>
 
             {/* 404 */}
             <Route component={NotFound} />
