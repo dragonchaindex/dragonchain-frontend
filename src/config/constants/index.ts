@@ -1,7 +1,7 @@
 import { ChainId, JSBI, Percent, Token } from '@dragonchaindex/sdk'
 import { mainnetTokens, testnetTokens } from './tokens'
 
-export const ROUTER_ADDRESS = '0xf2D2A5B03E979E34360f2926674Ae0CD099a3F6d'
+export const ROUTER_ADDRESS = '0x3D878681703B3aA0641346B700803841da3a5FA2'
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -12,10 +12,9 @@ type ChainTokenList = {
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   [ChainId.MAINNET]: [
     mainnetTokens.wbnb,
-    mainnetTokens.cake,
     mainnetTokens.busd
   ],
-  [ChainId.TESTNET]: [testnetTokens.wbnb, testnetTokens.cake, testnetTokens.busd],
+  [ChainId.TESTNET]: [testnetTokens.wbnb, testnetTokens.busd],
 }
 
 /**

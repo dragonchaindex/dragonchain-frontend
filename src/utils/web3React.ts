@@ -9,7 +9,7 @@ const POLLING_INTERVAL = 12000
 const rpcUrl = getNodeUrl()
 const chainId = parseInt(process.env.REACT_APP_CHAIN_ID, 10)
 
-const injected = new InjectedConnector({ supportedChainIds: [97] })
+const injected = new InjectedConnector({ supportedChainIds: [56] })
 
 const walletconnect = new WalletConnectConnector({
   rpc: { [chainId]: rpcUrl },
@@ -18,7 +18,7 @@ const walletconnect = new WalletConnectConnector({
   pollingInterval: POLLING_INTERVAL,
 })
 
-const bscConnector = new BscConnector({ supportedChainIds: [97] })
+const bscConnector = new BscConnector({ supportedChainIds: [56] })
 
 export const connectorsByName: { [connectorName in ConnectorNames]: any } = {
   [ConnectorNames.Injected]: injected,
