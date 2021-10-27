@@ -55,7 +55,7 @@ const AnniversaryAchievementModal: React.FC<AnniversaryModalProps> = ({ onDismis
           <AnniversaryImage src="/images/achievements/1-year.svg" />
         </Box>
         <Text textAlign="center" bold color="secondary" maxWidth="400px" fontSize="16px" mb="24px">
-          {t('You won points for joining PancakeSwap during the first year of our journey!')}
+          {t('You won points for joining DragonChain during the first year of our journey!')}
         </Text>
         <Button
           disabled={isLoading}
