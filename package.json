@@ -32,7 +32,7 @@
     "@binance-chain/bsc-connector": "^1.0.0",
     "@ethersproject/experimental": "^5.0.1",
     "@dragonchaindex/sdk": "1.0.6",
-    "@dragonchaindex/toolkit": "1.0.8",
+    "@dragonchaindex/toolkit": "1.0.9",
     "@reduxjs/toolkit": "^1.5.0",
     "@types/multicodec": "^1.0.0",
     "@types/node": "^13.13.5",
