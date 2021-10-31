@@ -51,12 +51,28 @@
       "logoURI": "https://i.imgur.com/tr2L2s5.png"
     },
     {
+      "name": "dexIRA Token",
+      "symbol": "DEX",
+      "address": "0x147e07976e1ae78287c33aafaab87760d32e50a5",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://dragonchain.finance/images/tokens/0x147e07976e1ae78287c33aafaab87760d32e50a5.png"
+    },
+    {
       "name": "WBNB Token",
       "symbol": "WBNB",
       "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
       "chainId": 97,
       "decimals": 18,
       "logoURI": "https://pancakeswap.finance/images/tokens/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c.png"
+    },
+    {
+      "name": "dexIRA Token",
+      "symbol": "DEX",
+      "address": "0x147e07976e1ae78287c33aafaab87760d32e50a5",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "https://dragonchain.finance/images/tokens/0x147e07976e1ae78287c33aafaab87760d32e50a5.png"
     },
     {
       "name": "BUSD Token",
