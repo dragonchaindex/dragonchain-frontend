@@ -67,6 +67,14 @@
       "logoURI": "https://dragonchain.finance/images/tokens/0x699e0743fb5e75a883fb8c723378705d7b91d4bc.png"
     },
     {
+      "name": "DragonChain Token",
+      "symbol": "DRAC",
+      "address": "0x36c26ffbe6a38de623c5155075e51a1a44e35d49",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://dragonchain.finance/images/tokens/0x36c26ffbe6a38de623c5155075e51a1a44e35d49.png"
+    },
+    {
       "name": "WBNB Token",
       "symbol": "WBNB",
       "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
@@ -121,6 +129,14 @@
       "chainId": 97,
       "decimals": 9,
       "logoURI": "https://dragonchain.finance/images/tokens/0x699e0743fb5e75a883fb8c723378705d7b91d4bc.png"
+    },
+    {
+      "name": "DragonChain Token",
+      "symbol": "DRAC",
+      "address": "0x36c26ffbe6a38de623c5155075e51a1a44e35d49",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "https://dragonchain.finance/images/tokens/0x36c26ffbe6a38de623c5155075e51a1a44e35d49.png"
     }
   ]
 }
