@@ -83,8 +83,8 @@ const App: React.FC = () => {
               <Redirect to="/swap" />
             </Route>
             <Route path="/pools">
-              {/* <Pools /> */}
-              <Redirect to="/swap" />
+              <Pools />
+              {/* <Redirect to="/swap" /> */}
             </Route>
             <Route path="/lottery">
               {/* <Lottery /> */}

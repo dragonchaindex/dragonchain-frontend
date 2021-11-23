@@ -20,14 +20,14 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
       },
     ],
   },
-  // {
-  //   label: t('Pools'),
-  //   href: '/pools',
-  //   icon: 'Pool',
-  //   showItemsOnMobile: false,
-  //   hideSubNav: true,
-  //   items: [],
-  // },
+  {
+    label: t('Pools'),
+    href: '/pools',
+    icon: 'Pool',
+    showItemsOnMobile: false,
+    hideSubNav: true,
+    items: [],
+  },
   // {
   //   label: t('Farms'),
   //   href: '/farms',
