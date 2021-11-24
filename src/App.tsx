@@ -79,8 +79,8 @@ const App: React.FC = () => {
               <Redirect to="/liquidity" />
             </Route>
             <Route path="/farms">
-              {/* <Farms /> */}
-              <Redirect to="/swap" />
+              <Farms />
+              {/* <Redirect to="/swap" /> */}
             </Route>
             <Route path="/pools">
               <Pools />
