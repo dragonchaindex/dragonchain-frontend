@@ -19,11 +19,11 @@ const pools: SerializedPoolConfig[] = [
     isFinished: true,
   },
   {
-    sousId: 2,
+    sousId: 300,
     stakingToken: serializedTokens.drac,
     earningToken: serializedTokens.wyvern,
     contractAddress: {
-      97: '0xABC17E88cDA917E3E40424E1345e73581fbA9044',
+      97: '',
       56: '0xABC17E88cDA917E3E40424E1345e73581fbA9044',
     },
     poolCategory: PoolCategory.CORE,
