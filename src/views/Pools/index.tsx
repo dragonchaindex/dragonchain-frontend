@@ -136,7 +136,6 @@ const Pools: React.FC = () => {
   const hasStakeInFinishedPools = stakedOnlyFinishedPools.length > 0
 
   usePollFarmsPublicData()
-  useFetchCakeVault()
   useFetchPublicPoolsData()
   useFetchUserPools(account)
 
@@ -265,10 +264,6 @@ const Pools: React.FC = () => {
             <Heading scale="md" color="text">
               {t('High APR, low risk.')}
             </Heading>
-          </Flex>
-          <Flex flex="1" height="fit-content" justifyContent="center" alignItems="center" mt={['24px', null, '0']}>
-            <HelpButton />
-            <BountyCard />
           </Flex>
         </Flex>
       </PageHeader>

@@ -31,6 +31,22 @@ export const mainnetTokens = {
     'PancakeSwap Token',
     'https://pancakeswap.finance/',
   ),
+  drac: new Token(
+    MAINNET,
+    '0x000713e37472c6544b96895c8aadec814eacb661',
+    18,
+    'DRAC',
+    'DragonChain Token',
+    'https://dragonchain.finance/',
+  ),
+  wyvern: new Token(
+    MAINNET,
+    '0x470862af0cf8d27ebfe0ff77b0649779c29186db',
+    18,
+    'Wyvern',
+    'Wyvern Token',
+    'https://wyverntoken.com/',
+  ),
   tlos: new Token(MAINNET, '0xb6C53431608E626AC81a9776ac3e999c5556717c', 18, 'TLOS', 'Telos', 'https://www.telos.net/'),
   nft: new Token(MAINNET, '0x1fC9004eC7E5722891f5f38baE7678efCB11d34D', 6, 'NFT', 'APENFT', 'https://apenft.org'),
   stephero: new Token(
@@ -197,7 +213,7 @@ export const mainnetTokens = {
   ),
   syrup: new Token(
     MAINNET,
-    '0x009cF7bC57584b7998236eff51b98A168DceA9B0',
+    '0x5756F83F058eB3d67Fe90F6c9C065Ba3239A724E',
     18,
     'SYRUP',
     'SyrupBar Token',
@@ -1217,6 +1233,14 @@ export const mainnetTokens = {
     'AlpacaToken',
     'https://www.alpacafinance.org/',
   ),
+  sing: new Token(
+    MAINNET,
+    '0x23894C0ce2d79B79Ea33A4D02e67ae843Ef6e563',
+    18,
+    'SING',
+    'SingularToken',
+    'https://singular.farm/sing',
+  ),
   dfd: new Token(
     MAINNET,
     '0x9899a98b222fCb2f3dbee7dF45d943093a4ff9ff',
@@ -1665,7 +1689,7 @@ export const testnetTokens = {
   ),
   syrup: new Token(
     TESTNET,
-    '0xfE1e507CeB712BDe086f3579d2c03248b2dB77f9',
+    '0x5756F83F058eB3d67Fe90F6c9C065Ba3239A724E',
     18,
     'SYRUP',
     'SyrupBar Token',
