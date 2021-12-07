@@ -31,7 +31,7 @@ const EasterNftCard: React.FC<NftCardProps> = ({ nft, ...props }) => {
 
   useEffect(() => {
     const fetchClaimStatus = async () => {
-      const canClaim = await easterNftContract.canClaim(account)
+      const canClaim = true // await claimRefundContract.canClaim(account) nft contract
 
       // Wallet can claim if it is claimable and the nft being displayed is mapped to the wallet's team
       setIsClaimable(canClaim ? team.id === teamNftMap[identifier] : false)

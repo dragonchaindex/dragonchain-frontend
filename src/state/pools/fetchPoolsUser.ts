@@ -18,8 +18,10 @@ export const fetchPoolsAllowance = async (account) => {
   const calls = nonBnbPools.map((pool) => ({
     address: pool.stakingToken.address,
     name: 'allowance',
-    params: [account, getAddress(pool.contractAddress)],
+    params: [account, pool.contractAddress[56]],
   }))
+
+  console.log(nonBnbPools)
 
   const allowances = await multicall(erc20ABI, calls)
   return nonBnbPools.reduce(

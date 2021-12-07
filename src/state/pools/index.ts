@@ -49,20 +49,19 @@ export const fetchPoolsPublicDataAsync = (currentBlock: number) => async (dispat
   const prices = getTokenPricesFromFarm(getState().farms.data)
 
   const liveData = poolsConfig.map((pool) => {
-    const blockLimit = blockLimits.find((entry) => entry.sousId === pool.sousId)
     const totalStaking = totalStakings.find((entry) => entry.sousId === pool.sousId)
+    const blockLimit = blockLimits.find((entry) => entry.sousId === pool.sousId)
     const isPoolEndBlockExceeded = currentBlock > 0 && blockLimit ? currentBlock > Number(blockLimit.endBlock) : false
     const isPoolFinished = pool.isFinished || isPoolEndBlockExceeded
-
-    const stakingTokenAddress = pool.stakingToken.address ? pool.stakingToken.address.toLowerCase() : null
+  /* const stakingTokenAddress = pool.stakingToken.address ? pool.stakingToken.address.toLowerCase() : null
     const stakingTokenPrice = stakingTokenAddress ? prices[stakingTokenAddress] : 0
 
     const earningTokenAddress = pool.earningToken.address ? pool.earningToken.address.toLowerCase() : null
-    const earningTokenPrice = earningTokenAddress ? prices[earningTokenAddress] : 0
+    const earningTokenPrice = earningTokenAddress ? prices[earningTokenAddress] : 0 */
     const apr = !isPoolFinished
       ? getPoolApr(
-          stakingTokenPrice,
-          earningTokenPrice,
+          0,
+          0,
           getBalanceNumber(new BigNumber(totalStaking.totalStaked), pool.stakingToken.decimals),
           parseFloat(pool.tokenPerBlock),
         )
@@ -71,8 +70,8 @@ export const fetchPoolsPublicDataAsync = (currentBlock: number) => async (dispat
     return {
       ...blockLimit,
       ...totalStaking,
-      stakingTokenPrice,
-      earningTokenPrice,
+      0:0,
+      1:0,
       apr,
       isFinished: isPoolFinished,
     }

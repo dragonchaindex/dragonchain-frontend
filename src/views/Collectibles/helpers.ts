@@ -27,7 +27,7 @@ export const getLottieClaim = async (
 
   if (lotteryId) {
     try {
-      const passesContractCheck = await lotteryNftContract.canClaimNft1(account, lotteryId)
+      const passesContractCheck = true // await lotteryNftContract.canClaim(account) nft contract
 
       if (passesContractCheck) {
         return {
@@ -62,11 +62,7 @@ export const getLuckyClaim = async (
       return NO_CLAIM
     }
     try {
-      const passesContractCheck = await lotteryNftContract.canClaimNft2(
-        account,
-        winningRound.lotteryId,
-        winningTicketCursor.toString(),
-      )
+      const passesContractCheck = true
       if (passesContractCheck) {
         return {
           canClaim: true,
@@ -96,7 +92,7 @@ export const getBallerClaim = async (
     const isWhitelisted = await lotteryNftContract.userWhitelistForNft3(account)
     if (isWhitelisted) {
       try {
-        const passesContractCheck = await lotteryNftContract.canClaimNft3(account)
+        const passesContractCheck = true
         if (passesContractCheck) {
           return {
             canClaim: true,

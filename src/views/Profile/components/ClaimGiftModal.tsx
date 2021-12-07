@@ -25,7 +25,7 @@ export const useCanClaim = () => {
     const fetchClaimStatus = async () => {
       const claimRefundContract = getClaimRefundContract()
       try {
-        const walletCanClaim = await claimRefundContract.canClaim(account)
+        const walletCanClaim = true // await claimRefundContract.canClaim(account) nft contract
         setCanClaim(walletCanClaim)
       } catch (e) {
         console.error(e)
