@@ -14,6 +14,7 @@ interface MulticallOptions {
 
 const multicall = async <T = any>(abi: any[], calls: Call[]): Promise<T> => {
   try {
+
     const multi = getMulticallContract()
     const itf = new ethers.utils.Interface(abi)
 

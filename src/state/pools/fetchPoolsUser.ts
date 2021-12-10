@@ -18,7 +18,7 @@ export const fetchPoolsAllowance = async (account) => {
   const calls = nonBnbPools.map((pool) => ({
     address: pool.stakingToken.address,
     name: 'allowance',
-    params: [account, pool.contractAddress[56]],
+    params: [account, getAddress(pool.contractAddress)],
   }))
 
   const allowances = await multicall(erc20ABI, calls)
@@ -73,11 +73,13 @@ export const fetchUserStakeBalances = async (account) => {
 }
 
 export const fetchUserPendingRewards = async (account) => {
+
   const calls = nonMasterPools.map((p) => ({
-    address: getAddress(p.contractAddress),
+    address: p.contractAddress[56],
     name: 'pendingReward',
     params: [account],
   }))
+
   const res = await multicall(sousChefABI, calls)
   const pendingRewards = nonMasterPools.reduce(
     (acc, pool, index) => ({

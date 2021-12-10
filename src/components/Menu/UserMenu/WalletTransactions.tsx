@@ -11,7 +11,6 @@ import TransactionRow from './TransactionRow'
 
 const WalletTransactions: React.FC = () => {
   const { chainId } = useActiveWeb3React()
-  console.log(chainId);
   const dispatch = useDispatch<AppDispatch>()
   const { t } = useTranslation()
   const allTransactions = useAllTransactions()

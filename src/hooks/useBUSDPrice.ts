@@ -1,4 +1,4 @@
-import { ChainId, Currency, currencyEquals, JSBI, Price } from '@dragonchaindex/sdk'
+import { Currency, currencyEquals, JSBI, Price } from '@dragonchaindex/sdk'
 import { useMemo } from 'react'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import tokens, { mainnetTokens } from 'config/constants/tokens'
@@ -17,11 +17,11 @@ export default function useBUSDPrice(currency?: Currency): Price | undefined {
   const wrapped = wrappedCurrency(currency, chainId)
   const tokenPairs: [Currency | undefined, Currency | undefined][] = useMemo(
     () => [
-      [chainId && wrapped && currencyEquals(WBNB, wrapped) ? undefined : currency, chainId ? WBNB : undefined],
-      [wrapped?.equals(BUSD_MAINNET) ? undefined : wrapped, chainId === ChainId.MAINNET ? BUSD_MAINNET : undefined],
-      [chainId ? WBNB : undefined, chainId === ChainId.MAINNET ? BUSD_MAINNET : undefined],
+      [ currency, WBNB],
+      [wrapped, BUSD_MAINNET],
+      [ WBNB , BUSD_MAINNET ],
     ],
-    [chainId, currency, wrapped],
+    [currency, wrapped],
   )
   const [[ethPairState, ethPair], [busdPairState, busdPair], [busdEthPairState, busdEthPair]] = usePairs(tokenPairs)
 
@@ -69,9 +69,15 @@ export default function useBUSDPrice(currency?: Currency): Price | undefined {
   }, [chainId, currency, ethPair, ethPairState, busdEthPair, busdEthPairState, busdPair, busdPairState, wrapped])
 }
 
+export const useTokenBusdPrice = (token): Price | undefined => {
+  const tokenPrice = useBUSDPrice(token)
+  return tokenPrice;
+}
+
 export const useCakeBusdPrice = (): Price | undefined => {
-  // const cakeBusdPrice = useBUSDPrice(tokens.cake)
-  return new Price(BUSD_MAINNET, BUSD_MAINNET, '1', '1')
+  const cakeBusdPrice = useBUSDPrice(tokens.drac)
+  // eturn new Price(BUSD_MAINNET, BUSD_MAINNET, '1', '1')
+  return cakeBusdPrice;
 }
 
 export const useBNBBusdPrice = (): Price | undefined => {

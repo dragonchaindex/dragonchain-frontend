@@ -28,6 +28,14 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
     hideSubNav: true,
     items: [],
   },
+  {
+    label: t('Farms'),
+    href: '/farms',
+    icon: 'farms',
+    showItemsOnMobile: false,
+    hideSubNav: true,
+    items: [],
+  },
   // {
   //   label: t('Farms'),
   //   href: '/farms',

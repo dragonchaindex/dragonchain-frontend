@@ -78,16 +78,11 @@ const App: React.FC = () => {
             <Route path="/pool">
               <Redirect to="/liquidity" />
             </Route>
-            <Route path="/farms">
-              {/* <Farms /> */}
-              <Redirect to="/swap" />
-            </Route>
             <Route path="/pools">
                <Pools />
             </Route>
-            <Route path="/lottery">
-              {/* <Lottery /> */}
-              <Redirect to="/swap" />
+            <Route path="/farms">
+              <Farms />
             </Route>
             <Route path="/ifo">
               {/* <Ifos /> */}

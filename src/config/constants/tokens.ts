@@ -1663,46 +1663,7 @@ export const mainnetTokens = {
 }
 
 export const testnetTokens = {
-  wbnb: new Token(
-    TESTNET,
-    '0xAC7C508859B2dd442e260CC5Ae647A6D5D7dB806',
-    18,
-    'WBNB',
-    'Wrapped BNB',
-    'https://www.binance.com/',
-  ),
-  cake: new Token(
-    TESTNET,
-    '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
-    18,
-    'CAKE',
-    'PancakeSwap Token',
-    'https://pancakeswap.finance/',
-  ),
-  busd: new Token(
-    TESTNET,
-    '0x9C54B6981AE52F5E286d7b6CC4318e492b2Bd576',
-    18,
-    'BUSD',
-    'Binance USD',
-    'https://www.paxos.com/busd/',
-  ),
-  syrup: new Token(
-    TESTNET,
-    '0x5756F83F058eB3d67Fe90F6c9C065Ba3239A724E',
-    18,
-    'SYRUP',
-    'SyrupBar Token',
-    'https://pancakeswap.finance/',
-  ),
-  bake: new Token(
-    TESTNET,
-    '0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5',
-    18,
-    'BAKE',
-    'Bakeryswap Token',
-    'https://www.bakeryswap.org/',
-  ),
+
 }
 
 const tokens = (): TokenList => {
